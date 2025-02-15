@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharad Sisodia - Resume</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    color: #000;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    background: white;
+    border: 1px solid #ddd;
+}
+
+/* Header styles */
+header {
+    background: #fff;
+    border-bottom: 2px solid #000;
+    padding: 2rem;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.header-content .title {
+    font-size: 1.25rem;
+}
+
+/* Main layout */
+main {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Sidebar styles */
+.sidebar {
+    border-right: 1px solid #ddd;
+    padding: 1.5rem;
+}
+
+/* Contact section */
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #000;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.contact-links a:hover {
+    background-color: #f5f5f5;
+}
+
+.contact-links i {
+    width: 20px;
+}
+
+.leetcode-link img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Skills section */
+.skills-list {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.skills-list li {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.skills-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #000;
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Education section */
+.education-item {
+    margin-bottom: 1.5rem;
+}
+
+.institution {
+    font-weight: 500;
+}
+
+.year {
+    color: #666;
+    font-size: 0.875rem;
+}
+
+/* Project section */
+.project-item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #000;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    font-weight: 500;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        margin: 1rem;
+    }
+
+    .sidebar {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .container {
+        margin: 0;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .project-item {
+        padding: 1rem;
+    }
+}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Sharad Sisodia</h1>
+                <p class="title">Full Stack Developer</p>
+            </div>
+        </header>
+
+        <main>
+            <aside class="sidebar">
+                <section class="contact-section">
+                    <h2>Contact</h2>
+                    <div class="contact-links">
+                        <a href="mailto:sharadsisodia222@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                            <span>sharadsisodia222@gmail.com</span>
+                        </a>
+                        <a href="https://github.com/Sharadsisodia" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub - Sharadsisodia</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sharad-sisodia-4aa496284/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn - Sharad Sisodia</span>
+                        </a>
+                        <a href="https://leetcode.com/u/sharadsisodia222/" target="_blank" class="leetcode-link">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode Logo">
+                            <span>LeetCode - Sharadsisodia222</span>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="skills-section">
+                    <h2>Skills</h2>
+                    <ul class="skills-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>MySQL</li>
+                        <li>Django</li>
+                        <li>MongoDB</li>
+                        <li>Node.js</li>
+                        <li>Blockchain</li>
+                        <li>OpenCV</li>
+                    </ul>
+                </section>
+
+                <section class="education-section">
+                    <h2>Education</h2>
+                    <div class="education-item">
+                        <h3>B.Tech, Computer Science and Engineering</h3>
+                        <p class="institution">Noida Institute of Engineering and Technology, Greater Noida</p>
+                        <p class="year">2022 - 2026</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Intermediate</h3>
+                        <p class="institution">JKG International School, Ghaziabad</p>
+                        <p class="year">2020 - 2022</p>
+                    </div>
+                </section>
+            </aside>
+
+            <div class="main-content">
+                <section class="about-section">
+                    <h2>About Me</h2>
+                    <p>I am a motivated and diligent B.Tech student majoring in Computer Science and Engineering (CSE), seeking opportunities to gain hands-on experience and contribute to innovative projects in the IT sector.</p>
+                    <p>I possess a strong foundation in Python, Java, and databases, coupled with a passion for continuous learning and problem-solving.</p>
+                </section>
+
+                <section class="experience-section">
+                    <h2>Work Experience</h2>
+                    <div class="experience-item">
+                        <h3>Fresher</h3>
+                        <p>Currently, I am actively looking for opportunities to apply my skills in real-world projects. I have been involved in several personal projects and hackathons, which have provided practical experience and a strong problem-solving mindset.</p>
+                    </div>
+                </section>
+
+                <section class="projects-section">
+                    <h2>Projects</h2>
+                    <div class="project-item">
+                        <h3>Patient-Doctor Appointment Booking System</h3>
+                        <a href="https://github.com/Sharadsisodia/Hospital-Log.git" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> GitHub Repository
+                        </a>
+                        <p>This is a Django-based web application that allows patients to book appointments with doctors, and doctors to manage their schedules. The system integrates with Google Calendar API to provide seamless booking experiences and supports a range of features like user authentication, appointment management, and content sharing between doctors and patients.</p>
+                    </div>
+
+                    <div class="project-item">
+                        <h3>Face Recognition Systems and Instagram User Identification</h3>
+                        <a href="https://github.com/Sharadsisodia/Mini-Project-1.git" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> GitHub Repository
+                        </a>
+                        <p>A face recognition system that analyzes and compares facial features against a database of known faces to identify individuals. This project enhances existing face recognition technology by implementing Open-Source Intelligence (OSINT), making identification more informative and accurate. Technologies used include Python, OpenCV, and PIL.</p>
+                    </div>
+
+                    <div class="project-item">
+                        <h3>Music Web Application</h3>
+                        <a href="https://github.com/Sharadsisodia/Music-Website.git" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> GitHub Repository
+                        </a>
+                        <p>A web application for playing music tracks with synchronized lyrics. The application features a music playlist themed around the best songs of 2023, a navigation bar, a song list with play options, a progress bar, and a section for displaying song lyrics. Technologies used include HTML, CSS, JavaScript, and Bootstrap for responsive design and UI components.</p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

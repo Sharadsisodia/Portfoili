@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'portfolio.css' %}">
+  </head>
+  <body>
+    {% load static %}
+    <!-- Header Section -->
+    <div class="header">
+      <a class="header1" href="#home">Home</a>
+      <a class="header1" href="#about">About</a>
+      <a class="header1" href="#portfolio">Portfolio</a>
+      <a class="header1" href="#footer">Contact</a>
+      <a href= "{% url 'resume' %}">Resume</a>
+    </div>
+
+    <!-- Home Section -->
+    <section id="home" class="min-height">
+      
+      <img class="background" src="/media/images/image222.jpg" alt="Image description" />
+      <div class="home-content">
+        <h1>Sharad Sisodia</h1>
+        <h2>Full Stack Developer</h2>
+        
+      </div>
+      
+      <div class="arrow-container">
+        <img src="/media/images/down-arrow.svg" alt="Scroll Down" class="arrow" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="padding" id="about">
+      <img class="background" src="/media/images/motion-background.jpg" alt="purple and blue abstract background" />
+      <div class="about-content">
+        <h2 id="aboutsec">About Myself</h2>
+        <p class="large">
+          I am a motivated and diligent B.Tech student majoring in Computer Science and Engineering (CSE) from Noida Institute of Engineering and Technology.
+        </p>
+        <hr />
+        <ul class="skills-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>Java</li>
+          <li>Django</li>
+          <li>MySQL</li>
+          <li>MongoDB</li>
+          <li>Blockchain</li>
+        </ul>
+        <hr />
+        <p class="detail">
+          I am passionate about solving problems in new creative ways to drive innovation. I possess a strong foundation in Python, Java, and databases, coupled with a passion for continuous learning and problem-solving.
+        </p>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="padding" id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="portfolio-container">
+        <div class="image-container">
+          <img src="/media/images/design-desk.jpeg" alt="desktop with books and laptop" />
+        </div>
+        <div class="project-container">
+          <div class="project">
+            <a href="https://github.com/Sharadsisodia/Face-Recognition-System.git" target="_blank">
+              <h3>Face Recognition and Instagram User Identification</h3>
+            </a>
+            <p class="small">
+              A face recognition system that analyzes and compares facial features against a database of known faces to identify individuals.
+            </p>
+          </div>
+          <div class="project">
+            <a href="https://github.com/Sharadsisodia/Music-Web-Application.git" target="_blank">
+              <h3>Music Web Application</h3>
+            </a>
+            <p class="small">
+              A web application for playing music tracks with synchronized lyrics. Technologies used include HTML, CSS, JavaScript, and Bootstrap for responsive design and UI components.
+            </p>
+          </div>
+          <div class="project">
+            <a href="https://github.com/Sharadsisodia/Hospital-Log.git" target="_blank">
+              <h3>Patient-Doctor Appointment Booking System</h3>
+            </a>
+            <p class="small">
+              This is a Django-based web application that allows patients to book appointments with doctors, and doctors to manage their schedules.
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <div class="footer" id="footer" style="background-color: #4E567E;">
+      <div class="social-links">
+        <a href="mailto:sharadsisodia222@gmail.com">
+          <img src="/media/images/socials/envelope.svg" alt="Email" class="socialIcon" />
+        </a>
+        
+        <a href="https://github.com/sharadsisodia" target="_blank">
+          <img src="/media/images/socials/github.svg" alt="GitHub" class="socialIcon" />
+        </a>
+        <a href="https://www.instagram.com/sh.ar.ad5435" target="_blank">
+          <img src="/media/images/socials/instagram.svg" alt="Instagram" class="socialIcon" />
+        </a>
+        <a href="https://www.linkedin.com/in/sharad-sisodia-4aa496284" target="_blank">
+          <img src="/media/images/socials/linkedin.svg" alt="LinkedIn" class="socialIcon" />
+        </a>
+      </div>
+      <p class="small" id="footerlast" style="color: rgb(255, 255, 255);">©Created by Sharad Sisodia</p>
+    </div>
+  </body>
+</html>
